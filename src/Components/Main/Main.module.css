@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+
+.mainimg {
+  margin: 0;
+  padding: 0;
+  height: 99vh;
+  width: 100vw;
+  object-fit: cover;
+}
+
+.mainvector {
+  height: max-content;
+  width: max-content;
+  background-color: transparent;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+.main {
+  position: relative;
+}
+
+.logowrapper {
+  width: 33vw;
+  display: flex;
+  flex-basis: content;
+  justify-content: center;
+  align-items: center;
+}
+.textwrapper {
+  width: 67vw;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.navbar {
+  position: absolute;
+  width: 100vw;
+  height: max-content;
+  top: 1.5rem;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo {
+  width: 186px;
+  height: 53px;
+  font-family: "Dancing Script";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 54px;
+  color: #ffffff;
+}
+
+.navtext {
+  width: 6.5rem;
+  height: 2.5rem;
+  margin: 1rem;
+
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  /* or 22px */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.navdowarrimg {
+  background: url("../../images/navbardown.svg");
+  background-repeat: no-repeat;
+  width: 1.25rem;
+  height: 0.8rem;
+}
+
+.navtext:last-child {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 4rem;
+  border: 2px solid #ffffff;
+
+  border-radius: 0.625rem;
+}
+
+/* .navtext:nth-last-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* .navtext:nth-last-child(2) > span {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+} */
+.headtextwrapper {
+  position: absolute;
+  width: 100vw;
+  top: 11rem;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.headtext {
+  width: 65vw;
+  height: 20vw;
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 8vw;
+  line-height: 8vw;
+  color: #ffffff;
+}
+
+.hamburger {
+  opacity: 0;
+}
+
+.headtextkisubtitle {
+  width: 50vw;
+  height: 7vw;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2rem;
+  color: #ffffff;
+}
+.navdowarrimgwrapper {
+  position: absolute;
+  left: 50vw;
+  bottom: 2rem;
+  width: max-content;
+  height: max-content;
+}
+.navdowarrimgwrapper > img {
+  width: 35px;
+  height: 24.5px;
+}
+.formwrapper {
+  position: absolute;
+  left: 0;
+  bottom: 5rem;
+  width: 100vw;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  width: max-content;
+  height: max-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-radius: 2rem;
+  background: linear-gradient(
+    94.43deg,
+    rgba(249, 249, 249, 0.49) 34.95%,
+    rgba(249, 249, 249, 0.175) 67.01%
+  );
+  backdrop-filter: blur(10px);
+
+  flex-wrap: wrap;
+}
+
+.formhelpercard {
+  width: 210px;
+  height: 70px;
+  background: #ffffff;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-left: 0.75rem;
+  padding-left: 0.75rem;
+  margin: 1rem;
+}
+.formhelpersearch {
+  width: 235px;
+  height: 70px;
+  background: linear-gradient(90deg, #ff594c 0%, #fac527 100%);
+  border-radius: 1rem;
+  padding-left: 0.75rem;
+  padding-left: 0.75rem;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.formhelpersearch > p {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 110%;
+  color: #ffffff;
+}
+.formhelpercard > div:nth-child(1) {
+  width: 44px;
+  height: 19px;
+
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 110%;
+  /* or 18px */
+
+  color: #6d6d6d;
+}
+.formhelpercard > div:nth-child(2) {
+  width: 185px;
+  height: 33px;
+
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 110%;
+
+  color: #000000;
+}
+
+@media only screen and (max-width: 800px) {
+  .mainimg {
+    height: 100vh;
+  }
+  .mainvector,
+  .textwrapper {
+    display: none;
+  }
+  .headtext {
+    width: 80vw;
+    height: 25vw;
+    font-size: 10vw;
+    line-height: 10vw;
+  }
+  .headtextkisubtitle {
+    width: 80vw;
+    height: 7vw;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+  .hamburger {
+    opacity: 1;
+    fill: #ffffff;
+  }
+  .headtextwrapper {
+    top: 8rem;
+  }
+  .form {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: unset;
+    padding: 0.5rem;
+    width: 90vw;
+    align-items: center;
+  }
+  .formhelpercard {
+    width: 333px;
+    height: 60px;
+    margin-bottom: 0.1rem;
+  }
+  .formhelpersearch {
+    width: 333px;
+    height: 60px;
+    margin-bottom: 0.1rem;
+  }
+  .logo {
+    font-size: 2rem;
+  }
+}
