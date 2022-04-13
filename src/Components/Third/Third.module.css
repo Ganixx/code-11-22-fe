@@ -1,0 +1,70 @@
+.imgwrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.imga {
+  position: relative;
+  display: inline;
+  width: min(90vw, auto);
+}
+
+.mainText {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 110%;
+  color: #000000;
+}
+
+.subText {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 110%;
+  color: #000000;
+}
+.imgsubwrapper {
+  position: relative;
+  width: max-content;
+  height: max-content;
+}
+
+.imgTextWrapper {
+  position: absolute;
+  width: min(75vw, 400px);
+  height: min(10vh, 100px);
+  left: 5%;
+  bottom: -20%;
+  background: linear-gradient(
+    94.33deg,
+    rgba(255, 255, 255, 0.6) 3.19%,
+    rgba(255, 255, 255, 0.1) 99.26%
+  );
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 1100px) {
+  .imgwrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 5rem;
+  }
+  .imga {
+    position: relative;
+    display: inline;
+    width: 90vw;
+  }
+}

@@ -1,0 +1,93 @@
+.headtext {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 110%;
+  color: #000000;
+}
+
+.headtextsubtitle {
+  width: min(90vw, 300px);
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 110%;
+  color: #000000;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-start;
+  margin: 6vw;
+  margin-bottom: 8vh;
+}
+
+.imga {
+  position: relative;
+  display: inline;
+  width: min(90vw, 500px);
+}
+
+.gridwrapper {
+  position: absolute;
+  width: min(85%, 400px);
+  height: min(7vh, 80px);
+  left: 5%;
+  bottom: -20%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  grid-gap: 0.7rem 3rem;
+  background: linear-gradient(
+    94.33deg,
+    rgba(255, 255, 255, 0.6) 3.19%,
+    rgba(255, 255, 255, 0.1) 99.26%
+  );
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 1rem;
+}
+
+.imagemainwrapper {
+  position: relative;
+  width: max-content;
+  height: max-content;
+}
+
+.imgwrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+
+.text {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 110%;
+  color: #000000;
+}
+
+.smallbtn {
+  width: 4rem;
+  height: 2rem;
+  background: linear-gradient(90deg, #ff594c 0%, #fac527 100%);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bigbtn {
+  width: 4rem;
+  height: 3rem;
+}

@@ -1,0 +1,11 @@
+.blur {
+  width: max-content;
+  height: max-content;
+
+  border-radius: 2rem;
+  background: linear-gradient(
+    94.43deg,
+    rgba(249, 249, 249, 0.49) 34.95%,
+    rgba(249, 249, 249, 0.175) 67.01%
+  );
+}

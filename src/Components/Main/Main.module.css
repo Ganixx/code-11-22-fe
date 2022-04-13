@@ -32,7 +32,7 @@
 .textwrapper {
   width: 67vw;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
 }
 .navbar {
@@ -44,6 +44,32 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+.sidebar {
+  position: absolute;
+  width: 75vw;
+  height: 100vh;
+  top: -1.5rem;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(90deg, #ff594c 0%, #fac527 100%);
+  z-index: 1;
+  animation: sidebarani ease-in-out 0.5s forwards;
+}
+
+.sidebarcloser {
+  animation: sidebaranir ease-in-out 0.5s forwards;
+}
+
+.closebutton {
+  position: absolute;
+  font-size: 5rem;
+  top: 1.5rem;
+  right: 2.5rem;
 }
 
 .logo {
@@ -94,17 +120,6 @@
   border-radius: 0.625rem;
 }
 
-/* .navtext:nth-last-child(2) {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
-/* .navtext:nth-last-child(2) > span {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-} */
 .headtextwrapper {
   position: absolute;
   width: 100vw;
@@ -132,7 +147,7 @@
   opacity: 0;
 }
 
-.headtextkisubtitle {
+.headtextsubtitle {
   width: 50vw;
   height: 7vw;
   font-family: "Ubuntu";
@@ -242,6 +257,52 @@
   color: #000000;
 }
 
+.formhelpercard > input {
+  outline: none;
+  border: none;
+  width: 185px;
+  height: 33px;
+
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 110%;
+
+  color: #000000;
+}
+
+.fader {
+  animation: faderAni ease-in-out 4s infinite;
+}
+
+@keyframes faderAni {
+  0% {
+    background: linear-gradient(90deg, #ff594c 0%, #fac527 100%);
+    opacity: 0.75;
+  }
+  100% {
+    background: linear-gradient(360deg, #ff594c 0%, #fac527 100%);
+    opacity: 1;
+  }
+}
+
+@keyframes sidebaranir {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+@keyframes sidebarani {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
 @media only screen and (max-width: 800px) {
   .mainimg {
     height: 100vh;

@@ -1,8 +1,10 @@
 import React from "react";
 import mainstyles from "./Main.module.css";
 import Hamburger from "../../images/hamburger.svg";
+import Sidebar from "./Sidebar";
 
 function Navbar() {
+  const [sideBarenabled, setsideBarenabled] = React.useState(false);
   return (
     <div className={mainstyles.navbar}>
       <div className={mainstyles.logowrapper}>
@@ -17,7 +19,14 @@ function Navbar() {
         </div>
         <div className={mainstyles.navtext}>Call</div>
       </div>
-      <img src={Hamburger} className={mainstyles.hamburger} alt="hamburger" />
+      <img
+        data-testid="hamId"
+        src={Hamburger}
+        className={mainstyles.hamburger}
+        alt="hamburger"
+        onClick={() => setsideBarenabled((oldstate) => !oldstate)}
+      />
+      {sideBarenabled && <Sidebar setsideBarenabled={setsideBarenabled} />}
     </div>
   );
 }
