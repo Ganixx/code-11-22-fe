@@ -59,6 +59,7 @@
   background: linear-gradient(90deg, #ff594c 0%, #fac527 100%);
   z-index: 1;
   animation: sidebarani ease-in-out 0.5s forwards;
+  gap: 2rem;
 }
 
 .sidebarcloser {
@@ -73,7 +74,7 @@
 }
 
 .logo {
-  width: 186px;
+  width: max-content;
   height: 53px;
   font-family: "Dancing Script";
   font-style: normal;
